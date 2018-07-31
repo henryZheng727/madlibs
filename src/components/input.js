@@ -1,5 +1,6 @@
 import React from 'react';
- const Input = (title) => {
+
+const Input = (title) => {
     return (
         <div className="input">
             <input />
@@ -7,4 +8,5 @@ import React from 'react';
         </div>
     )
 }
- export default Input; 
+
+export default Input;

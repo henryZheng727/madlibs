@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
- import Input from './input';
- class Card extends Component {
+
+import Input from './input';
+
+class Card extends Component {
     render() {
         return (
             <div className="card">
@@ -10,5 +12,5 @@ import React, { Component } from 'react';
         )
     }
 }
- export default Card; 
-  
+
+export default Card;
