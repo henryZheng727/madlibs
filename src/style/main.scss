@@ -99,6 +99,7 @@ header {
 
     button {
         justify-self: center;
+        transform: translateY(50%)
     }
 
     &__generate {
@@ -116,8 +117,16 @@ header {
         height: 297px;
         background-color: #F2F2F2;
 
+        justify-self: center;
+        margin-bottom: 84px;
+
+
         p {
+            line-height: 29px;
             padding: 50px 47px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
         }
     }
 }
