@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.gray {
+    background: #B3B3B3;
+}
+
+.green {
+    background:#00CB79;
+}
 
 .home {
     position: relative;
@@ -120,6 +127,22 @@ header {
         justify-self: center;
         margin-bottom: 84px;
 
+        &__label {
+            height: 18px;
+            width: 18px;
+            line-height: 22px;
+            background-color: black;
+            border-radius: 50%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+
+            text-align: center;
+            color: white;
+            //  padding-top: 3px;
+            display: inline-block;
+            margin: 4px;
+        }
+
 
         p {
             line-height: 29px;
@@ -172,8 +195,6 @@ header {
     }
     &__number {
         grid-column: number-s/number-e;
-
-        background-color: #00CB79;
         color:white;
         font-size: 20px;
         line-height: 24px;
