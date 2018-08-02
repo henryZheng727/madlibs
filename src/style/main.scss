@@ -28,15 +28,15 @@
     grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
 }
 
-header {
+.header {
     color: white; 
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     align-self: center;
+
     &__skew {
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
         clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
-
         z-index: -10;
         top: 0;
         left: 0;
@@ -44,10 +44,9 @@ header {
         height: 110vh;
         width: 100vw;
         background-color: #444444;
-
     }
     &__border {
-        -webkit-clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
         clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
         z-index: -10;
         top: 0;
@@ -62,6 +61,7 @@ header {
         font-size: 36px;
         font-weight: 500;
         line-height: 44px;
+        font-family: "Montserrat", sans-serif;
     }
 
     p {
@@ -106,15 +106,16 @@ header {
 
     button {
         justify-self: center;
-        transform: translateY(50%)
     }
 
     &__generate {
         background-color: #00CB79;
+        transform: translateY(-300px);
         @include button;
     }
 
     &__clear {
+        transform: translateY(50%);
         background-color: #45B0E5;
         @include button;
     }
