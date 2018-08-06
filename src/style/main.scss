@@ -2,9 +2,9 @@
     height: 50px;
     width: 300px;
     border-radius: 4px;
-    box-shadow: 0 2px 4px 0 rgba (0,0,0,.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-size: 22px;
     text-align: center;
 }
@@ -14,7 +14,7 @@
 }
 
 .green {
-    background:#00CB79;
+    background: #00CB79;
 }
 
 .home {
@@ -24,19 +24,19 @@
     display: grid;
 
     justify-items: center;
-    //align-items: center;
+    // align-items: center;
     grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
 }
 
 .header {
-    color: white; 
-    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-family: 'Montserrat';
     text-align: center;
     align-self: center;
-
     &__skew {
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
         clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+
         z-index: -10;
         top: 0;
         left: 0;
@@ -48,6 +48,7 @@
     &__border {
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
         clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
+
         z-index: -10;
         top: 0;
         left: 0;
@@ -61,7 +62,6 @@
         font-size: 36px;
         font-weight: 500;
         line-height: 44px;
-        font-family: "Montserrat", sans-serif;
     }
 
     p {
@@ -78,16 +78,16 @@
     min-height: 736px;
     max-height: 994px;
     width: 1240px;
-    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,.06);
     border-radius: 7px;
 
-    display:grid;
+    display: grid;
     grid-template-rows: 1fr 50px;
     background-color: white;
 
     &__inputs {
-        // background-color:skyblue;
-        display:grid;
+        // background-color: skyblue;
+        display: grid;
         grid-template-rows: repeat(4, 27px);
         grid-template-columns: repeat(4, 1fr);
 
@@ -106,6 +106,7 @@
 
     button {
         justify-self: center;
+
     }
 
     &__generate {
@@ -128,39 +129,39 @@
         justify-self: center;
         margin-bottom: 84px;
 
+        font-family: 'Montserrat';
+
         &__label {
             height: 18px;
             width: 18px;
             line-height: 22px;
             background-color: black;
             border-radius: 50%;
-            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
-
+         
             text-align: center;
             color: white;
-            //  padding-top: 3px;
+            // padding-top: 3px;
             display: inline-block;
             margin: 4px;
         }
 
-
         p {
             line-height: 29px;
             padding: 50px 47px;
-            font-family: 'Montserrat', sans-serif;
             font-size: 16px;
-            font-weight: 300;
+            font-weight: 300;   
         }
     }
+
 }
 
 .input {
     display: grid;
-    //grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     text-align: center;
     grid-column-gap: 8px;
 
@@ -169,7 +170,7 @@
     &__title {
         grid-column: input-s/input-e;
 
-
+        
         color: #B3B3B3;
         font-size: 12px;
         font-weight: 300;
@@ -179,7 +180,7 @@
         grid-column: input-s/input-e;
 
         border: none;
-        font-size:15px;
+        font-size: 15px;
         text-align: center;
         padding: 4px 0;
         border-bottom: 1px solid #B3B3B3;
@@ -189,19 +190,19 @@
         &:focus {
             outline: none;
             border-bottom: 1px solid rgb(0, 255, 247);
-
+   
         }
-        //width: 190px;
-        //height: 40px;
+        // width: 190px;
+        // height: 40px;
     }
     &__number {
         grid-column: number-s/number-e;
-        color:white;
+        color: white;
         font-size: 20px;
         line-height: 24px;
         padding-top: 1px;
         height: 26px;
-        width: 25px;
+        width: 26px;
         border-radius: 50%;
     }
 }
